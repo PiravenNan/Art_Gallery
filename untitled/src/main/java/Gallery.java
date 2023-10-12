@@ -29,6 +29,14 @@ public class Gallery{
         this.till += amount;
     }
     
+    public void removeFromStock(ArtWork artWork){
+        
+        this.stock.remove(artWork);
+        
+    }
+    
+    
+    
     
     
     

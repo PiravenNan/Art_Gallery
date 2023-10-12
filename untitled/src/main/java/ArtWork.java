@@ -15,4 +15,8 @@ public class ArtWork {
     public String getArtistName(){
         return this.artistName;
     }
+    
+    public int getPrice(){
+        return price;
+    }
 }
