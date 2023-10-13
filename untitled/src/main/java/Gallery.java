@@ -11,36 +11,26 @@ public class Gallery{
         this.till = till;
         this.stock = new ArrayList<ArtWork>();
     }
+    public int valueStock(){
+        int totalValue = 0;
 
-    public void addToStock(ArtWork artWork){
-        this.stock.add(artWork);
+        for (ArtWork art : this.stock){
+            totalValue+=art.getPrice();
+        }
+        return totalValue;
     }
-    
-    public int countStock(){
-        return this.stock.size();
-    
-    }
-    
-    public int getTill(){
-        return this.till;
-    }
-    
-    public void addToTill(int amount){
-        this.till += amount;
-    }
-    
-    public void removeFromStock(ArtWork artWork){
-        
-        this.stock.remove(artWork);
-        
-    }
-    
-    
-    
-    
-    
-    
-    
+    public void addToStock(ArtWork artWork){this.stock.add(artWork);}
+    public int countStock(){return this.stock.size();}
+    public int getTill(){return this.till;}
+    public void addToTill(int amount){this.till += amount;}
+    public void removeFromStock(ArtWork artWork){this.stock.remove(artWork);}
+
+
+
+
+
+
+
 
 
 

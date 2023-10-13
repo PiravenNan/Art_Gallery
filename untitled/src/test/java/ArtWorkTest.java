@@ -4,6 +4,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 
 public class ArtWorkTest {
+
     @Test
     public void getArtistNameTest(){
         //Given
