@@ -42,6 +42,7 @@ public class CustomerTest {
         assertThat(resultStock).isEqualTo(expectedStock);
         assertThat(resultWallet).isEqualTo(expectedWallet);
         assertThat(resultTill).isEqualTo(expectedTill);
+        assertThat(resultsCollection).isEqualTo(expectedCollection);
     }
 
 }
